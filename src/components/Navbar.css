@@ -1,0 +1,90 @@
+.green-container {
+  height: 18vh;
+  width: 100vw;
+  background-color: #128c7e;
+  display: flex;
+  flex-direction: column;
+}
+.green-sub1 {
+  height: 10vh;
+  width: inherit;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.green-sub1 h4 {
+  margin-left: 7%;
+  color: white;
+}
+.green-search {
+  margin-left: 57%;
+  margin-top: 1%;
+  margin-right: 2%;
+}
+.green-comments {
+  margin-right: 10%;
+  margin-top: 1%;
+}
+.green-sub2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 8vh;
+  width: inherit;
+  border-bottom: 5px solid #128c7e;
+}
+.camera-icon {
+  height: 30%;
+  color: rgb(182, 157, 157);
+  width: 20%;
+}
+.main-nav {
+  height: inherit;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.main-nav div {
+  width: 33.3%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.dyline-1 {
+  margin-top: 8.5vh;
+  height: 10%;
+  width: 30%;
+  background-color: white;
+  position: absolute;
+  margin-left: 20%;
+}
+.dyline-2 {
+  margin-top: 8.5vh;
+  height: 10%;
+  width: 30%;
+  background-color: white;
+  position: absolute;
+  margin-left: 45%;
+}
+.dyline-3 {
+  margin-top: 8.5vh;
+  height: 10%;
+  width: 30%;
+  background-color: white;
+  position: absolute;
+  margin-left: 70%;
+}
+.dots-clicked {
+  position: absolute;
+  height: 13vh;
+  width: 10vh;
+  background-color: white;
+  border: 3px solid silver;
+  border-radius: 15px;
+  margin-left: 68%;
+  margin-top: 22%;
+}

@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
+  const Chats = () => <h1>Chats</h1>;
+  const Status = () => <h1>Status</h1>;
+  const Calls = () => <h1>Calls</h1>;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <>
+        <div>
+          <Navbar />
+          <Switch>
+            <Route
+              path="/chats"
+              render={() => {
+                return <Chats />;
+              }}
+            />
+            <Route
+              path="/status"
+              render={() => {
+                return <Status />;
+              }}
+            />
+            <Route
+              path="/calls"
+              render={() => {
+                return <Calls />;
+              }}
+            />
+          </Switch>
+        </div>
+      </>
+    </Router>
   );
 }
 
