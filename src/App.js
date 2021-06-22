@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 function App() {
-  const Chats = () => <h1>All girls loves Maggi :)</h1>;
-  const Status = () => <h1>All girls wants Maggi :))</h1>;
-  const Calls = () => <h1>All girls desire Maggi :P</h1>;
+  const Chats = () => <h1>Chats</h1>;
+  const Status = () => <h1>Status</h1>;
+  const Calls = () => <h1>Calls</h1>;
   return (
     <Router>
       <>
